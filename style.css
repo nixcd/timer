@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #f5eeca;
+  --secondary-color: #1a1c0a;
+}
+
+body {
+  background-color: var(--primary-color);
+  transition: all 0.3s ease;
+  border: 0;
+  margin: 0;
+  font-family: gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  color: var(--secondary-color);
+}
+
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+a:hover {
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+ul.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+header > h1:first-of-type {
+  text-align: center;
+}
+
+header > a:first-of-type:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+
+div#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+div#times > .time {
+  margin-left: 1rem;
+  font-size: 8rem;
+}
+
+/* Contador */
+div#content > span#contador {
+  text-align: center;
+  color: inherit;
+  font-weight: bold;
+  font-size: 10rem;
+  overflow: hidden;
+}
+
+div#buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+div#buttons button {
+  border: none;
+  padding: 10px;
+  margin-left: 1rem;
+  border-radius: 3px;
+  height: auto;
+  font-size: 2rem;
+}
+
+div#buttons button#stop, button#restart {
+  display: none;
+}
+
+div#buttons button:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+div#buttons > button#start {
+  color: var(--secondary-color);
+  background-color: #AFA;
+}
+
+div#buttons > button#stop {
+  color: var(--secondary-color);
+  background-color: rgb(255, 170, 170);
+}
+
+div#buttons > button#restart {
+  color: var(--secondary-color);
+  background-color: rgb(237, 255, 170);
+}
+
+
+
+/* Test counter test-ss */
+
+span.time-recount {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+span.time-recount:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+  text-decoration: underline;
+  text-underline-position: under;
+}
